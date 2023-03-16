@@ -12,6 +12,7 @@ class Phone(models.Model):
     lte_exists = models.BooleanField(default=0)
     slug = models.SlugField(max_length=255, unique=True, blank=False)
 
+# изменение стандартного имени таблицы (стандартное "имя проекта-имя класса", т.е. phones-phone)
     class Meta:
         db_table = "Phone"
 

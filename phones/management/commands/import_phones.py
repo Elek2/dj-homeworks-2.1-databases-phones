@@ -21,6 +21,6 @@ class Command(BaseCommand):
                 image=phone['image'],
                 release_date=phone['release_date'],
                 lte_exists=phone['lte_exists'],
-                slug=slugify(phone['name']),
+                slug=slugify(phone['name']),  # создаем slug название из имени
             )
             p.save()
